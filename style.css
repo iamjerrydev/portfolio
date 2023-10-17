@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 50;
+}
+
+.navigation a {
+    /* margin-right: 20px; */
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #737373;
+    transition: 0.3s;
+    padding: 8px 35px;
+    transition: 0.3s;
+    border-radius: 40px;
+}
+
+.navigation a:hover  {
+    font-weight: 500;
+    color: white;
+    /* background-color: lightblue; */
+    background-image: -webkit-linear-gradient(60deg, #000428, #024177);
+    border-radius: 40px;
+    padding: 8px 35px;
+}
+
+socials {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.socials a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    /* border: 2px solid blue; */
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    position: relative;
+    background-color: transparent;
+}
+
+.socials a i {
+    color: black;
+    font-size: 1.2em;
+}
+
+/* .socials a i:hover {
+    color: blue
+} */
+
+.socials a:hover {
+    background-image: -webkit-linear-gradient(60deg, #6c6e79, #63aef0);
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: #D0D0D0;
+    background: url(images/cover3.png);
+    background-size: cover;
+    background-position:right;
+}
+
+.home .home-content {
+    max-width: 500px;
+}
+
+.home-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px; 
+}
+
+.home-content h2 span {
+    font-weight: bold;
+    /* background: -webkit-linear-gradient(#000428, #004e92); */
+    background-image: -webkit-linear-gradient(#000428, #004e92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.btn-bg {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(45deg, #000428, #53afff);
+    z-index: -1;
+}
+
+.btn-txt {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    letter-spacing: 1px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    font-size: 1.2em;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+
+
+.background-photo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.section-name {
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
+
+.what-i-do {
+    position: relative;
+}
+
+.what-id-do-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    gap: 1.5rem;
+    margin: 50px;
+}
+
+.what-id-do-grid .img {
+    max-width: 500px;
+    max-height: 90%;
+    padding-right: 15%;
+    align-self: center;
+    justify-self: center;
+}
+
+.what-i-do-grid-text {
+    max-width: 90%;
+    padding: 0 0 0 25%;
+}
+
+.what-i-do-grid-text h3{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.what-i-do-grid-text ul{
+    margin-top: 20px;
+}
+
+.what-i-do-grid-text ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 30px;
+    /* background-color: blue; */
+    background-image: -webkit-linear-gradient(65deg, #000428, #53afff);
+    margin-bottom: 8px;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+}
+
+
+.what-id-do-grid .img-reverse {
+    max-width: 500px;
+    max-height: 90%;
+    padding-left: 10%;
+    align-self: center;
+    justify-self: center;
+}
+
+.what-i-do-grid-text-reverse {
+    max-width: 90%;
+    padding: 0 20% 0 0;
+}
+
+.what-i-do-grid-text-reverse h3{
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.what-i-do-grid-text-reverse ul{
+    margin-top: 20px;
+}
+
+.what-i-do-grid-text-reverse ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 30px;
+    background-image: -webkit-linear-gradient(65deg, #000428, #53afff);
+    margin-bottom: 10px;
+    border-radius: 50px;
+    color: white;
+    font-size: 12px;
+}
+
+.companies div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 60px 10% 10px 10%; */
+    padding: 30px 10%;
+    
+}
+
+.companies img{
+    max-width: 15%;
+}
+
+.work-experience {
+    padding: 60px 15% 10px 15%;
+}
+
+.work-experience-grid {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    align-items:center;
+    gap: 1.5rem;
+    padding-bottom: 40px;
+    /* margin: 100px; */
+}
+
+.work-experience-grid-year {
+    align-self: self-start;
+    padding-top: 10px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.work-experience-grid-details img {
+    width: 100px;
+}
+
+.work-experience-grid-details h3 {
+    font-size: 2.5em;
+    background-image: -webkit-linear-gradient(#000428, #004e92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.work-experience-grid-details h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    background-image: -webkit-linear-gradient(#000428, #004e92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items:center;
+    gap: 3rem;
+    padding: 30px 15%;
+    margin-top: 40px;
+}
+
+.portfolio-grid-card {
+    align-self: self-start;
+    padding: 10px;
+    height: 450px;
+    /* background-color: #D0D0D0; */
+    background-image: -webkit-linear-gradient(60deg, #0c1138, #0067c0);;
+    /* border: 2px solid blue; */
+    padding: 50px 30px;
+    border-radius: 30px;
+}
+
+.portfolio-grid-card i {
+    padding-top: 10px;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.portfolio-grid-card h3 {
+    font-size: 2em;
+    padding: 15px 0;
+    color: whitesmoke;
+}
+
+.portfolio-grid-card p {
+    color: whitesmoke;
+}
+
+.skill-section {
+    margin-bottom: 50px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    gap: 1em 3em;
+    padding: 30px 15%;
+    /* margin-top: 40px; */
+}
+
+.skill-group {
+    align-self: self-start;
+    padding: 10px;
+    height: auto;
+    padding: 50px 30px;
+    border-radius: 30px;
+}
+
+.skill-group i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.skill-group h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.skill-item {
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 10px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.progress-bar span {
+    position: absolute;
+    height: 100%;
+    background-image: -webkit-linear-gradient(20deg, #000428, #024177);
+    border-radius: 10px 0 0 10px;
+}
+
+.python-bar span {
+    width: 85%;
+}
+
+.htmlcss-bar span {
+    width: 50%;
+}
+
+.js-bar span {
+    width: 30%;
+}
+
+.node-bar span {
+    width: 5%;
+}
+
+.agile-bar span {
+    width: 95%;
+}
+
+.solution-bar span {
+    width: 85%;
+}
+
+.leadership-bar span {
+    width: 90%;
+}
+
+.automation-bar span {
+    width: 95%;
+}
+
+.api-bar span {
+    width: 95%;
+}
+
+.ui-bar span {
+    width: 95%;
+}
+
+.performance-bar span {
+    width: 50%;
+}
+
+.design-bar span {
+    width: 100%;
+}
+
+.uiux-bar span {
+    width: 70%;
+}
+
+.aws-bar span {
+    width: 60%;
+}
+
+.database-bar span {
+    width: 50%;
+}
+
+.version-bar span {
+    width: 40%;
+}
+
+.stakeholder-bar span {
+    width: 90%;
+}
+
+footer {
+    background-image: -webkit-linear-gradient(20deg, #000428, #024177);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+}
+
+footer .contacts h5 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer i {
+    margin-right: 8px;
+}
+
+footer h5 {
+    color: white;
+}
